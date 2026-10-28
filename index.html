@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Biology Study Evidence</title>
+<style>
+:root{--g:#2e7d32;--g2:#e8f5e9;--b:#0277bd;--b2:#e1f5fe;--e:#8d6e63;--e2:#efebe9;--bg:#f4f8f2;--tx:#1f2d1f}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Segoe UI",system-ui,sans-serif;background:var(--bg);color:var(--tx);line-height:1.5}
+header{background:linear-gradient(135deg,#2e7d32,#0277bd);color:#fff;text-align:center;padding:48px 20px}
+header h1{margin:0 0 8px;font-size:2.2rem}
+header p{margin:0;opacity:.9}
+nav{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;padding:14px;background:#fff;position:sticky;top:0;box-shadow:0 2px 6px #0002;z-index:5}
+nav a{text-decoration:none;color:var(--g);background:var(--g2);padding:6px 12px;border-radius:20px;font-size:.85rem;font-weight:600}
+nav a:hover{background:var(--g);color:#fff}
+main{max-width:1100px;margin:auto;padding:24px 16px}
+section{margin-bottom:40px}
+h2{color:var(--g);border-bottom:3px solid var(--g2);padding-bottom:6px}
+h2 span{margin-right:8px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.card{background:#fff;border-radius:14px;padding:16px;box-shadow:0 2px 8px #0001;border-top:5px solid var(--g)}
+.card.b{border-color:var(--b)}.card.e{border-color:var(--e)}
+.card .ico{font-size:2rem}
+.card h3{margin:6px 0;font-size:1.05rem}
+.card p{margin:0;font-size:.92rem}
+.steps{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.step{flex:1 1 130px;background:var(--b2);border-radius:12px;padding:10px;text-align:center;font-size:.85rem;position:relative}
+.step b{display:block;color:var(--b)}
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 2px 8px #0001;margin-top:14px;font-size:.9rem}
+th{background:var(--g);color:#fff;padding:10px;text-align:left}
+td{padding:9px 10px;border-bottom:1px solid #e0e0e0}
+tr:nth-child(even) td{background:var(--e2)}
+.scroll{overflow-x:auto}
+.quiz details{background:#fff;border-radius:12px;margin-bottom:10px;box-shadow:0 2px 6px #0001;padding:12px 16px}
+.quiz summary{cursor:pointer;font-weight:600;color:var(--b)}
+.quiz details[open] summary{margin-bottom:8px}
+.quiz .ans{background:var(--g2);padding:10px;border-radius:8px;border-left:4px solid var(--g)}
+footer{text-align:center;padding:20px;color:#666;font-size:.85rem}
+</style>
+</head>
+<body>
+<header>
+  <h1>🧬 Biology Study Evidence</h1>
+  <p>Cells · Nucleic Acids · Mutations · Inheritance · Cell Cycle · Mitosis · Meiosis</p>
+</header>
+<nav>
+  <a href="#cell">Cell Organization</a><a href="#nucleic">Nucleic Acids</a><a href="#mut">Mutations</a>
+  <a href="#inh">Inheritance</a><a href="#cycle">Cell Cycle</a><a href="#mito">Mitosis</a>
+  <a href="#meio">Meiosis</a><a href="#quiz">Self-Quiz</a>
+</nav>
+<main>
+
+<section id="cell">
+  <h2><span>🔬</span>1. Cell Organization</h2>
+  <div class="grid">
+    <div class="card"><div class="ico">🧫</div><h3>Cell Theory</h3><p>All living things are made of cells; the cell is the basic unit of life; all cells come from pre-existing cells.</p></div>
+    <div class="card b"><div class="ico">🦠</div><h3>Prokaryotic</h3><p>No nucleus; DNA in the nucleoid. Small and simple (bacteria, archaea).</p></div>
+    <div class="card e"><div class="ico">🧠</div><h3>Eukaryotic</h3><p>True nucleus and membrane-bound organelles (animals, plants, fungi, protists).</p></div>
+    <div class="card"><div class="ico">⚡</div><h3>Mitochondria</h3><p>Produce ATP through cellular respiration.</p></div>
+    <div class="card b"><div class="ico">🏭</div><h3>Ribosomes / ER / Golgi</h3><p>Ribosomes make proteins; ER transports them; Golgi modifies, packs and ships.</p></div>
+    <div class="card e"><div class="ico">🌿</div><h3>Chloroplast</h3><p>Site of photosynthesis in plant cells and algae.</p></div>
+  </div>
+  <div class="scroll"><table>
+    <tr><th>Feature</th><th>Animal cell</th><th>Plant cell</th></tr>
+    <tr><td>Cell wall</td><td>Absent</td><td>Present (cellulose)</td></tr>
+    <tr><td>Chloroplasts</td><td>Absent</td><td>Present</td></tr>
+    <tr><td>Vacuole</td><td>Small, several</td><td>Large central vacuole</td></tr>
+    <tr><td>Shape</td><td>Round / irregular</td><td>Fixed, rectangular</td></tr>
+  </table></div>
+</section>
+
+<section id="nucleic">
+  <h2><span>🧬</span>2. Introduction to Nucleic Acids</h2>
+  <div class="grid">
+    <div class="card"><div class="ico">🧱</div><h3>Nucleotide</h3><p>Monomer of nucleic acids: a sugar, a phosphate group and a nitrogenous base.</p></div>
+    <div class="card b"><div class="ico">🪢</div><h3>DNA</h3><p>Double helix, deoxyribose, bases A, T, G, C. Stores genetic information.</p></div>
+    <div class="card e"><div class="ico">📨</div><h3>RNA</h3><p>Single strand, ribose, bases A, U, G, C. Types: mRNA, tRNA, rRNA.</p></div>
+  </div>
+  <div class="steps">
+    <div class="step"><b>1. Replication</b>DNA → DNA</div>
+    <div class="step"><b>2. Transcription</b>DNA → mRNA (nucleus)</div>
+    <div class="step"><b>3. Translation</b>mRNA → protein (ribosome)</div>
+  </div>
+  <p><b>Base pairing:</b> A–T (A–U in RNA) and G–C. This is the Central Dogma of molecular biology.</p>
+</section>
+
+<section id="mut">
+  <h2><span>⚠️</span>3. Mutations</h2>
+  <div class="grid">
+    <div class="card"><div class="ico">🔁</div><h3>Substitution (point)</h3><p>One base replaced by another. Can be silent, missense or nonsense.</p></div>
+    <div class="card b"><div class="ico">➕</div><h3>Insertion</h3><p>Extra base(s) added. May cause a frameshift.</p></div>
+    <div class="card e"><div class="ico">➖</div><h3>Deletion</h3><p>Base(s) lost. May cause a frameshift.</p></div>
+    <div class="card"><div class="ico">🧩</div><h3>Chromosomal</h3><p>Large-scale changes: duplication, inversion, translocation, nondisjunction.</p></div>
+  </div>
+  <div class="scroll"><table>
+    <tr><th>Type</th><th>Effect</th></tr>
+    <tr><td>Silent</td><td>Same amino acid; no change in protein</td></tr>
+    <tr><td>Missense</td><td>Different amino acid (e.g., sickle cell anemia)</td></tr>
+    <tr><td>Nonsense</td><td>Premature stop codon; shortened protein</td></tr>
+    <tr><td>Frameshift</td><td>Reading frame shifts; usually a nonfunctional protein</td></tr>
+  </table></div>
+  <p><b>Causes:</b> copying errors, UV radiation, chemicals (mutagens). Only mutations in gametes are inherited.</p>
+</section>
+
+<section id="inh">
+  <h2><span>🌱</span>4. Inheritance</h2>
+  <div class="grid">
+    <div class="card"><div class="ico">🫛</div><h3>Gregor Mendel</h3><p>Father of genetics; worked with pea plants.</p></div>
+    <div class="card b"><div class="ico">🧬</div><h3>Gene &amp; Allele</h3><p>A gene is a unit of heredity; alleles are its versions (dominant <b>A</b>, recessive <b>a</b>).</p></div>
+    <div class="card e"><div class="ico">🎭</div><h3>Genotype vs Phenotype</h3><p>Genotype = allele combination (Aa); phenotype = observable trait.</p></div>
+    <div class="card"><div class="ico">⚖️</div><h3>Homo / Heterozygous</h3><p>Homozygous: AA or aa. Heterozygous: Aa.</p></div>
+  </div>
+  <div class="steps">
+    <div class="step"><b>Law of Segregation</b>Each parent passes one allele per gene</div>
+    <div class="step"><b>Independent Assortment</b>Genes for different traits sort independently</div>
+    <div class="step"><b>Monohybrid cross</b>Aa × Aa → 3 dominant : 1 recessive (1 AA : 2 Aa : 1 aa)</div>
+  </div>
+</section>
+
+<section id="cycle">
+  <h2><span>🔄</span>5. Cell Cycle</h2>
+  <div class="steps">
+    <div class="step"><b>G1</b>Growth, normal function</div>
+    <div class="step"><b>S</b>DNA replication</div>
+    <div class="step"><b>G2</b>Prepares for division</div>
+    <div class="step"><b>M</b>Mitosis + cytokinesis</div>
+  </div>
+  <div class="grid" style="margin-top:14px">
+    <div class="card"><div class="ico">⏸️</div><h3>Interphase</h3><p>G1 + S + G2. The cell spends most of its life here.</p></div>
+    <div class="card b"><div class="ico">🚦</div><h3>Checkpoints</h3><p>G1, G2 and M checkpoints verify DNA integrity and conditions before moving on.</p></div>
+    <div class="card e"><div class="ico">🎗️</div><h3>Cancer</h3><p>Loss of cell cycle control causes uncontrolled division (e.g., faulty p53).</p></div>
+    <div class="card"><div class="ico">💤</div><h3>G0</h3><p>Resting phase; cell is not dividing (e.g., neurons).</p></div>
+  </div>
+</section>
+
+<section id="mito">
+  <h2><span>✂️</span>6. Mitosis</h2>
+  <p>Produces <b>2 genetically identical diploid cells</b> for growth, repair and asexual reproduction.</p>
+  <div class="steps">
+    <div class="step"><b>🅿️ Prophase</b>Chromosomes condense; spindle forms</div>
+    <div class="step"><b>🅼 Metaphase</b>Chromosomes line up at the equator</div>
+    <div class="step"><b>🅰 Anaphase</b>Sister chromatids pulled apart</div>
+    <div class="step"><b>🆃 Telophase</b>Nuclei re-form</div>
+    <div class="step"><b>🅲 Cytokinesis</b>Cytoplasm divides</div>
+  </div>
+</section>
+
+<section id="meio">
+  <h2><span>🥚</span>7. Meiosis</h2>
+  <p>Produces <b>4 genetically different haploid cells</b> (gametes) through two divisions: meiosis I and meiosis II.</p>
+  <div class="grid">
+    <div class="card"><div class="ico">🔀</div><h3>Crossing over</h3><p>Prophase I: homologous chromosomes exchange segments.</p></div>
+    <div class="card b"><div class="ico">🎲</div><h3>Independent assortment</h3><p>Metaphase I: random alignment of homologous pairs.</p></div>
+    <div class="card e"><div class="ico">⚠️</div><h3>Nondisjunction</h3><p>Failed separation; causes e.g. Down syndrome (trisomy 21).</p></div>
+  </div>
+  <div class="scroll"><table>
+    <tr><th>Feature</th><th>Mitosis</th><th>Meiosis</th></tr>
+    <tr><td>Divisions</td><td>1</td><td>2</td></tr>
+    <tr><td>Daughter cells</td><td>2</td><td>4</td></tr>
+    <tr><td>Chromosome number</td><td>Diploid (2n)</td><td>Haploid (n)</td></tr>
+    <tr><td>Genetic variation</td><td>Identical</td><td>Different</td></tr>
+    <tr><td>Crossing over</td><td>No</td><td>Yes</td></tr>
+    <tr><td>Function</td><td>Growth and repair</td><td>Gamete production</td></tr>
+  </table></div>
+</section>
+
+<section id="quiz" class="quiz">
+  <h2><span>📝</span>Self-Assessment Questions</h2>
+  <details><summary>1. What organelle makes ATP, and what organelle is only found in plant cells for photosynthesis?</summary>
+    <div class="ans">Mitochondria make ATP; chloroplasts perform photosynthesis in plant cells.</div></details>
+  <details><summary>2. Name the three steps of the Central Dogma and where each happens.</summary>
+    <div class="ans">Replication (nucleus), transcription (nucleus, DNA → mRNA) and translation (ribosome, mRNA → protein).</div></details>
+  <details><summary>3. Why can a deletion of one base be more harmful than a silent substitution?</summary>
+    <div class="ans">A deletion causes a frameshift that changes every codon after it, while a silent substitution keeps the same amino acid.</div></details>
+  <details><summary>4. In a cross Aa × Aa, what fraction of offspring show the recessive phenotype?</summary>
+    <div class="ans">1/4 (25%), the aa genotype.</div></details>
+  <details><summary>5. In which phase of the cell cycle is DNA replicated?</summary>
+    <div class="ans">S phase of interphase.</div></details>
+  <details><summary>6. What happens during anaphase of mitosis?</summary>
+    <div class="ans">Sister chromatids separate and are pulled toward opposite poles of the cell.</div></details>
+  <details><summary>7. Name two ways meiosis creates genetic variation.</summary>
+    <div class="ans">Crossing over in prophase I and independent assortment of homologous chromosomes in metaphase I.</div></details>
+</section>
+</main>
+<footer>🌿 Biology study evidence · works offline</footer>
+</body>
+</html>
